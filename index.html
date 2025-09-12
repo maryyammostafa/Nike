@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="shortcut icon" href="./Images/first-logo.png" type="image/x-icon" id="ShortcutIcon">
+
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/keyframes.css">
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index.responsive.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./Images/first-logo.png" id="Logo" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mb-2 mb-lg-0 me-lg-3 active" onclick="changeActive(this)" data-section-id="Home">
+                        <a class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item mb-2 mb-lg-0 me-lg-3" onclick="changeActive(this)" data-section-id="Latest">
+                        <a class="nav-link">Latest</a>
+                    </li>
+                    <li class="nav-item mb-2 mb-lg-0" onclick="changeActive(this)" data-section-id="Featured">
+                        <a class="nav-link">Featured</a>
+                    </li>
+                </ul>
+                <ul type="none" class="d-flex m-0">
+                    <li class="me-3"><i class="fa-solid fa-cart-shopping cart" onclick="openPopUp('cart')"></i></li>
+                    <li><i class="fa-solid fa-user user" onclick="openPopUp('login')"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="Home" class="vh-100 overflow-hidden">
+        <div class="carousell h-100">
+            <div class="carouselInner h-100">
+                <div class="carouselItem active" data-color-name="--first-color">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-md-5 part1">
+                                <div class="item">
+                                    <h5>Nike Red Shoes</h5>
+                                    <h2 class="my-3">Nike Metcon Shoes</h2>
+                                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Repellat Maiores Et Eos Eaque Veritatis Aut Laboriosam Earum Dolorem Iste Atque.</p>
+                                    <a class="btn" data-section-id="Latest">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 part2">
+                                <div class="item">
+                                    <img src="./Images/home-text-1.png" alt="">
+                                    <img src="./Images/home-shoe-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carouselItem" data-color-name="--second-color">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-md-5 part1">
+                                <div class="item">
+                                    <h5>Nike Blue Shoes</h5>
+                                    <h2 class="my-3">Nike Metcon Shoes</h2>
+                                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Repellat Maiores Et Eos Eaque Veritatis Aut Laboriosam Earum Dolorem Iste Atque.</p>
+                                    <a class="btn" data-section-id="Latest">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 part2">
+                                <div class="item">
+                                    <img src="./Images/home-text-2.png" alt="">
+                                    <img src="./Images/home-shoe-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carouselItem" data-color-name="--third-color">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-md-5 part1">
+                                <div class="item">
+                                    <h5>Nike Yellow Shoes</h5>
+                                    <h2 class="my-3">Nike Metcon Shoes</h2>
+                                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Repellat Maiores Et Eos Eaque Veritatis Aut Laboriosam Earum Dolorem Iste Atque.</p>
+                                    <a class="btn" data-section-id="Latest">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 part2">
+                                <div class="item">
+                                    <img src="./Images/home-text-3.png" alt="">
+                                    <img src="./Images/home-shoe-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="btn next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </header>
+
+    <section id="Offer">
+        <div class="row g-0">
+            <div class="col-sm-6 bg-black">
+                <div class="item">
+                    <a href="#">
+                        <img src="./Images/home-banner-1.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 bg-dark">
+                <div class="item">
+                    <a href="#">
+                        <img src="./Images/home-banner-2.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Latest" class="py-4 py-lg-5">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <img src="./Images/first-correct.png" alt="">
+                <h2>LATEST PRODUCTS</h2>
+            </div>
+            <div class="products"></div>
+        </div>
+    </section>
+
+    <section id="Featured" class="pb-4 pb-lg-5">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <img src="./Images/first-correct.png" alt="">
+                <h2>FEATURE PRODUCTS</h2>
+            </div>
+            <div class="row"></div>
+        </div>
+    </section>
+
+    <div class="popUp cart overflow-auto" onclick="closePopUp('cart')">
+        <div class="box p-3 rounded-3">
+            <div class="header mb-4 mb-lg-5">
+                <h3 class="text-center">Shop</h3>
+                <i class="fa-regular fa-circle-xmark exit" onclick="closePopUp('cart')"></i>
+            </div>
+            <div class="body">
+                <p class="alert alert-warning text-center">There are no products in the cart</p>
+                <div class="row"></div>
+                <button class="btn w-100 buyBtn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popUp login" onclick="closePopUp('login')">
+        <div class="box p-3 rounded-3">
+            <div class="header mb-4">
+                <h3 class="text-center">Login</h3>
+                <i class="fa-regular fa-circle-xmark exit" onclick="closePopUp('login')"></i>
+            </div>
+            <div class="body">
+                <form autocomplete="off">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="userName" placeholder="UserName *">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" name="password" placeholder="Password *">
+                    </div>
+                    <div class="input-group">
+                        <button class="btn btn-success w-100">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popUp product" onclick="closePopUp('product')">
+        <div class="box p-3 rounded-3"></div>
+    </div>
+
+    <div class="loadingPage">
+        <img src="./Images/nike.gif" class="img-fluid" alt="">
+    </div>
+
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/shoes.js"></script>
+    <script src="./JS/globalFunctions.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html> 

@@ -1,0 +1,210 @@
+@media (max-width: 1300px) {
+    nav.navbar .navbar-brand{
+        width: 25%;
+    }
+    nav.navbar .navbar-collapse {
+        background: #ada996;
+        background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+        background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+        border-radius: 10px;
+        padding-block: 10px;
+        margin: 10px 0;
+    }
+    nav.navbar .navbar-collapse .nav-item{
+        width: fit-content;
+        text-align: center;
+        margin-inline: auto;
+    }
+    nav.navbar .navbar-collapse .nav-item a{
+        padding: 8px;
+    }
+    nav.navbar .navbar-collapse ul:nth-of-type(2){
+        justify-content: center;
+        padding: 0;
+    }
+
+    header .carousell .carouselItem{
+        padding-top: 60px;
+    }
+    header .carousell .carouselItem .part1 h2{
+        font-size: 30px;
+    }
+    header .carousell .carouselItem .part2 img:nth-of-type(1){
+        width: 50%;
+        top: -100px;
+    }
+    header .carousell .carouselItem .part2 img:nth-of-type(2){
+        width: 70%;
+        left: 15%;
+    }
+    header .carousell .carouselItem.active.show .part2 img:nth-of-type(1){
+        top: 0;
+    }
+    header .carousell>button{
+        top: initial;
+        bottom: 10px;
+    }
+    header .carousell>button.prev{
+        left: initial;
+        right: 80px;
+    }
+    header .carousell>button.next{
+        right: 20px;
+    }
+
+    .title img{
+        width: 50%;
+    }
+
+    #Latest .product .part1 .item ul{
+        display: flex;
+    }
+    #Latest .product .part2 .item h3{
+        font-size: 18px;
+    }
+
+    #Featured .row .item{
+        width: 280px;
+        margin: auto;
+    }
+
+    .popUp.product.active{
+        display: block;
+        overflow-y: auto;
+    }
+    .popUp .box,
+    .popUp.cart .box{
+        width: 300px;
+    }
+    .popUp.product .box{
+        margin: 25px auto;
+        width: 280px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    nav.navbar .navbar-brand{
+        width: 20%;
+    }
+
+    header .carousell .carouselItem{
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .title img{
+        width: 40%;
+    }
+
+    #Latest .product .part2 .item h3{
+        font-size: 20px;
+    }
+
+    .popUp .box,
+    .popUp.cart .box,
+    .popUp.product .box{
+        width: 350px;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    .title img{
+        width: 35%;
+    }
+
+    #Latest .product{
+        width: 75%;
+        margin: auto;
+    }
+
+    #Featured .row .item{
+        width: initial;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    nav.navbar .navbar-brand{
+        width: 13%;
+    }
+
+    header .carousell .carouselItem{
+        padding: 0;
+    }
+    header .carousell .carouselItem .part2 img:nth-of-type(1){
+        width: 70%;
+    }
+    header .carousell .carouselItem .part2 img:nth-of-type(2){
+        width: 90%;
+        left: 20%;
+    }
+    header .carousell .carouselItem.active.show .part2 img:nth-of-type(1){
+        top: -30px;
+    }
+
+    #Latest .product .part1 .item ul{
+        display: block;
+    }
+
+    #Featured .row .item{
+        width: 280px;
+    }
+
+    .popUp.product.active{
+        display: flex;
+        overflow-y: initial;
+    }
+    .popUp.cart .box,
+    .popUp.product .box{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    nav.navbar .navbar-brand{
+        width: 8%;
+    }
+    nav.navbar .navbar-collapse {
+        background: none;
+    }
+
+    .title img{
+        width: 25%;
+    }
+
+    header .carousell .carouselItem .part1 h2{
+        font-size: 40px;
+    }
+    header .carousell .carouselItem.active.show .part2 img:nth-of-type(1){
+        top: -45px;
+    }
+
+    #Latest .product{
+        width: initial;
+        margin: initial;
+    }
+
+    #Featured .row .item{
+        width: initial;
+    }
+
+    .popUp .box{
+        width: 400px;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+    header .carousell>button{
+        top: 50%;
+    }
+    header .carousell>button.prev{
+        left: 30px;
+    }
+    header .carousell>button.next{
+        right: 30px;
+    }
+
+    .title img{
+        width: 20%;
+    }
+}
