@@ -225,6 +225,7 @@ header .carousell>button.next{
 #Offer .item{
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 #Offer .item::before{
     content: "";
